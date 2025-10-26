@@ -17,7 +17,7 @@ Loop Guard・整合性検証・異種AI互換機構を備え、複数モデル�
 ---
 
 ## 📂 ディレクトリ構成
-
+```
 UTP_v2.1_Reinforced_Paper/
 │
 ├─ README.md                 → 日本語概要（トップ）
@@ -34,8 +34,7 @@ UTP_v2.1_Reinforced_Paper/
 └─ spec/                     → プロトコル仕様定義
     ├─ Universal_Trigger_Protocol_v2.1-reinforced.json
     └─ Universal_Trigger_Protocol_v2.1-reinforced.json.bak
-
----
+```---
 
 ## 🧠 三層構造（Core Layers）
 
