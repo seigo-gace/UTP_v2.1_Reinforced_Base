@@ -18,7 +18,6 @@ Loop Guard・整合性検証・異種AI互換機構を備え、複数モデル�
 
 ## 📂 ディレクトリ構成
 
-\`\`\`
 UTP_v2.1_Reinforced_Paper/
 │
 ├─ README.md                 → 日本語概要（トップ）
