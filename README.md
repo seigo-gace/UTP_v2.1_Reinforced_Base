@@ -34,7 +34,6 @@ UTP_v2.1_Reinforced_Paper/
 └─ spec/                     → プロトコル仕様定義
     ├─ Universal_Trigger_Protocol_v2.1-reinforced.json
     └─ Universal_Trigger_Protocol_v2.1-reinforced.json.bak
-\`\`\`
 
 ---
 
