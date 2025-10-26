@@ -1,0 +1,23 @@
+# === 設定 ===
+$tex = "utp_v2.1_reinforced.tex"
+$fixed = "utp_v2.1_reinforced_fixed.tex"
+
+# === UTF-8変換 ===
+$content = Get-Content $tex -Raw
+Set-Content -Value $content -Encoding UTF8 $fixed
+
+# === 日本語対応ヘッダを注入 ===
+$insert = @"
+\usepackage{xeCJK}
+\setCJKmainfont{MS Mincho}
+\setCJKsansfont{MS Gothic}
+\setCJKmonofont{MS Gothic}
+"@
+(Get-Content $fixed) -replace '\\begin{document}', "$insert`r`n\begin{document}" | Set-Content $fixed -Encoding UTF8
+
+# === XeLaTeXでPDF生成 ===
+xelatex -interaction=nonstopmode $fixed
+xelatex -interaction=nonstopmode $fixed
+
+Write-Host "✅ PDF生成完了: utp_v2.1_reinforced_fixed.pdf" -ForegroundColor Cyan
+S
